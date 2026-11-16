@@ -1,4 +1,10 @@
-# OFFSET
+﻿# OFFSET
+## Live Demo
+
+**Try OFFSET:** https://offset-videojs-skin-production.up.railway.app
+
+Source: https://github.com/chizzydev/offset-videojs-skin
+
 
 **One video. Two times.**
 
@@ -13,13 +19,13 @@ When the browser exposes `requestVideoFrameCallback`, Pin uses the timestamp of 
 
 1. Play the video.
 2. Press **R** or choose **Pin this moment**.
-3. Keep watching — the reference stays fixed while LIVE continues.
+3. Keep watching â€” the reference stays fixed while LIVE continues.
 4. Compare the two temporal positions with:
-   - **Wipe** — drag the in-frame divider to reveal either moment.
-   - **Duo** — place both moments side-by-side inside the same player stage.
-   - **Onion** — overlay the reference with adjustable opacity.
+   - **Wipe** â€” drag the in-frame divider to reveal either moment.
+   - **Duo** â€” place both moments side-by-side inside the same player stage.
+   - **Onion** â€” overlay the reference with adjustable opacity.
 5. Move the lime **R** marker independently on the temporal caliper.
-6. Read the exact signed `Δt` between REFERENCE and LIVE.
+6. Read the exact signed `Î”t` between REFERENCE and LIVE.
 
 The core idea is simple: **pin what was, keep watching what is, measure what changed.**
 
@@ -41,27 +47,27 @@ The temporal-comparison layer adds one silent native video surface using the sam
 
 ## Controls
 
-- **R** — pin / repin the current live moment
-- **Esc** — clear the reference
-- **Space** — play / pause
-- **M** — mute
-- **F** — fullscreen
-- **← / →** — seek live playback by 5 seconds
+- **R** â€” pin / repin the current live moment
+- **Esc** â€” clear the reference
+- **Space** â€” play / pause
+- **M** â€” mute
+- **F** â€” fullscreen
+- **â† / â†’** â€” seek live playback by 5 seconds
 
 ### Wipe divider
 
-- Drag the `↔` divider directly
-- `← / →` — adjust 1%
-- `Shift + ← / →` — adjust 5%
-- `Home / End` — move to comparison bounds
-- Double-click — reset to 50%
+- Drag the `â†”` divider directly
+- `â† / â†’` â€” adjust 1%
+- `Shift + â† / â†’` â€” adjust 5%
+- `Home / End` â€” move to comparison bounds
+- Double-click â€” reset to 50%
 
 ### Reference marker
 
 - Drag the lime **R** marker on the timeline
-- `← / →` — move reference 1 second
-- `Shift + ← / →` — move reference 0.1 second
-- `Home / End` — move to the beginning / end
+- `â† / â†’` â€” move reference 1 second
+- `Shift + â† / â†’` â€” move reference 0.1 second
+- `Home / End` â€” move to the beginning / end
 
 ## Accessibility and responsive behavior
 
@@ -106,7 +112,7 @@ http://127.0.0.1:4173/?remote=1
 
 ## Demo media
 
-The bundled hero demo uses **“Men Doing Sparring”** by **Pavel Danilyuk**, sourced from Pexels (1920×1080, 16:9, 25 fps, ~20 s) and re-encoded for web delivery / responsive seeking.
+The bundled hero demo uses **â€œMen Doing Sparringâ€** by **Pavel Danilyuk**, sourced from Pexels (1920Ã—1080, 16:9, 25 fps, ~20 s) and re-encoded for web delivery / responsive seeking.
 
 - Source: https://www.pexels.com/video/men-doing-sparring-6296481/
 - License: https://www.pexels.com/license/
@@ -134,4 +140,5 @@ npm run build
 ```
 
 The focused tests cover reference loading, cancellation, retries, failures, end clamping, and listener cleanup. They use a media-event test double; actual decoding, presented-frame accuracy, and browser accessibility still require the manual checks in `ACCEPTANCE.md`. `OFFSET_BUILD_GATE=PASS` is printed by `RUN_WINDOWS.ps1` after a successful build, not by `npm run build` itself.
+
 
